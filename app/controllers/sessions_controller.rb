@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate( password )
       session[:user_id] = user.id
-      redirect_to profile_path
+      redirect_to events_path
     else
       redirect_to log_in_path
     end
