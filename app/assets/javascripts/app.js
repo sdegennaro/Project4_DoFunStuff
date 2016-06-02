@@ -13,7 +13,7 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
     }
 
     $scope.makeEvent = function(date, time, title, description, location, url, image_url){
-      var newEmail = {
+      var newEvent = {
           eventObject: {
             date: date,
             time: time,
@@ -28,6 +28,14 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
       $scope.saveEvent(newEvent)
     //   $scope.emailInput = "";
     //   $scope.zipcodeInput = "";
+    }
+
+    $scope.logIds = function($event){
+      console.log($(this)[0].event.id);
+      $http.get('/api/favorites').then(function(response){
+        console.log(response.date);
+      })
+
     }
 
 

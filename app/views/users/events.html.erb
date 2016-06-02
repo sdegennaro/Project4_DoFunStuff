@@ -4,7 +4,20 @@
     <div ng-repeat="event in events" class="event-container">
       <h3>{{event.title}}</h3>
       <img src="{{event.image_url}}">
-      <button type="submit">Save</button>
+      <button type="submit" ng-click="logIds($event)">Save</button>
     </div>
+
+    <form id="create-event-form">
+      <input type = "text" ng-model="dateInput" name ="event[date]" placeholder="Date">
+      <input type = "text" ng-model="timeInput" name ="event[time]" placeholder="Time">
+      <input type = "text" ng-model="titleInput" name ="event[title]" placeholder="Title">
+      <input type = "text" ng-model="descrInput" name ="event[descr]" placeholder="Description">
+      <input type = "text" ng-model="locInput" name ="event[loc]" placeholder="Location">
+      <input type = "text" ng-model="urlInput" name ="event[url]" placeholder="Url">
+      <input type = "text" ng-model="imgInput" name ="event[img]" placeholder="Image Url">
+
+      <button ng-click="makeEvent(dateInput,timeInput,titleInput,descrInput,locInput,urlInput,imgInput)">Create!</button>
+
+    </form>
   </div>
 <div>

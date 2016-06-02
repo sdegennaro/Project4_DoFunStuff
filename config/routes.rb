@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :events
+    resources :favorites
+
   end
 
   get '/users/log_in' => "users#log_in", as: :log_in
