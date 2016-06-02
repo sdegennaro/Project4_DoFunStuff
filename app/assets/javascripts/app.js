@@ -31,12 +31,28 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
     }
 
     $scope.logIds = function($event){
-      console.log($(this)[0].event.id);
+      var eventId = parseInt($(this)[0].event.id)
+      var userId = ""
+      newFave =
       $http.get('/api/favorites').then(function(response){
-        console.log(response.date);
+        userId = parseInt(response.data.user.id);
+        var newFave = {
+            fave: {
+              event_id: eventId,
+              user_id: userId
+            }
+          }
+          console.log(newFave);
+        $scope.saveFave(newFave)
       })
-
     }
+
+    $scope.saveFave = function(newFave){
+      $http.post('/api/favorites', newFave).then(function(response){
+        console.log(response);
+      })
+    }
+
 
 
 }])

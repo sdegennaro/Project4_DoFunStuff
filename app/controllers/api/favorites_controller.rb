@@ -1,12 +1,12 @@
 class Api::FavoritesController < ApplicationController
 
   def index
-    render json: { fave: Favorite.all }
-    render json: { user: current_user }
+    render json: { fave: Favorite.all, user: current_user }
+
   end
 
   def create
-    newFave = Favorite.create favorite_params
+    newFave = Favorite.create fave_params
     render json: { fave: newFave }
 
   end
