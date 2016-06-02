@@ -1,9 +1,13 @@
 class Api::FavoritesController < ApplicationController
 
+  include SessionsHelper
+
   def index
-    render json: { fave: Favorite.all, user: current_user }
+    render json: { faves: Favorite.all, user: current_user }
 
   end
+
+  before_action :authenticate!
 
   def create
     newFave = Favorite.create fave_params
@@ -19,7 +23,7 @@ class Api::FavoritesController < ApplicationController
   private
 
   def fave_params
-    params.require(:fave).permit(:event_id, :user_id)
+    params.require(:favorite).permit(:event_id, :user_id)
   end
 
 end

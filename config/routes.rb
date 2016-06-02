@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   # new & create for users
-  resources :users, only: [:new, :create]
+  resources :users, only: [:index, :new, :create]
 
   namespace :api do
     resources :events
@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   end
 
   get '/users/log_in' => "users#log_in", as: :log_in
+  get '/users/find' => "users#find_friends", as: :find_friends
 
   get '/events' => "users#events", as: :events
 

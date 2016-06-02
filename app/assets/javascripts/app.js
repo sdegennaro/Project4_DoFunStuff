@@ -52,6 +52,10 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
         console.log(response);
       })
     }
+    $http.get('/users/find').then(function(response){
+      $scope.users = response.data;
+      console.log("here's the stuff ", $scope.users);
+    })
 
 
 

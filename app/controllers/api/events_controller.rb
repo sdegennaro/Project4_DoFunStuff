@@ -1,8 +1,12 @@
 class Api::EventsController < ApplicationController
 
+  include SessionsHelper
+
   def index
     render json: { events: Event.all}
   end
+
+  before_action :authenticate!
 
   def create
     newEvent = Event.create event_params
@@ -18,7 +22,7 @@ class Api::EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:eventObject).permit(:date, :time, :title, :description, :location, :url, :image_url)
+    params.require(:event).permit(:date, :time, :title, :description, :location, :url, :image_url)
   end
 
 end

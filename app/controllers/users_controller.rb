@@ -3,6 +3,9 @@ class UsersController < ApplicationController
   include SessionsHelper
   before_action :authenticate!, only: [:profile]
 
+  def index
+  end
+
   def new
     @user = User.new
   end
@@ -14,6 +17,10 @@ class UsersController < ApplicationController
 
   def log_in
 
+  end
+
+  def find_friends
+    render json: { users: User.all }
   end
 
   def profile
