@@ -37,7 +37,7 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
       $http.get('/api/favorites').then(function(response){
         userId = parseInt(response.data.user.id);
         var newFave = {
-            fave: {
+            favorite: {
               event_id: eventId,
               user_id: userId
             }
@@ -53,7 +53,7 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
       })
     }
     $http.get('/users/find').then(function(response){
-      $scope.users = response.data;
+      $scope.users = response.data.users;
       console.log("here's the stuff ", $scope.users);
     })
 
