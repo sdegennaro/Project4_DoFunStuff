@@ -1,28 +1,33 @@
-var events = angular.module("Bakery-Email-List", []);
+var eventApi = angular.module("Event-Api", []);
 
-bakeryEmailList.controller("SubscribersController",["$scope","$http",function($scope, $http){
+eventApi.controller("EventApiController",["$scope","$http",function($scope, $http){
 
-    $http.get('/api/email_subscribers').then(function(response){
-      $scope.email_subscribers = response.data.email_subscribers;
+    $http.get('/api/events').then(function(response){
+      $scope.events = response.data.events;
     })
 
-    $scope.saveEmail = function(newEmail){
-      $http.post('/api/email_subscribers', newEmail).then(function(response){
+    $scope.saveEvent = function(newEvent){
+      $http.post('/api/events', newEvent).then(function(response){
         console.log(response);
       })
     }
 
-    $scope.makeEmail = function(email,zip){
+    $scope.makeEvent = function(date, time, title, description, location, url, image_url){
       var newEmail = {
-          email_subscriber: {
-            email: email,
-            zipcode: zip
+          eventObject: {
+            date: date,
+            time: time,
+            title: title,
+            description: description,
+            location: location,
+            url: url,
+            image_url: image_url
           }
         }
-      console.log(newEmail);
-      $scope.saveEmail(newEmail)
-      $scope.emailInput = "";
-      $scope.zipcodeInput = "";
+      console.log(newEvent);
+      $scope.saveEvent(newEvent)
+    //   $scope.emailInput = "";
+    //   $scope.zipcodeInput = "";
     }
 
 

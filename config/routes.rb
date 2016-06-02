@@ -7,10 +7,14 @@ Rails.application.routes.draw do
 
   # new & create for users
   resources :users, only: [:new, :create]
-  # resources :books
+
+  namespace :api do
+    resources :events
+  end
 
   get '/users/log_in' => "users#log_in", as: :log_in
-  get '/users/events' => "users#events", as: :events
+
+  get '/events' => "users#events", as: :events
 
   post   '/sessions' => "sessions#create", as: :creation_station
   delete '/sessions' => "sessions#destroy", as: :deletion_station
