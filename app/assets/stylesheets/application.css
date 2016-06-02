@@ -6,19 +6,27 @@ button{
   height: 50px;
   width: 100px;
 }
-
+body{
+  background-color: rgb(54, 19, 9);
+}
 /* Slideshow code from: http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/*/
 
 .background-slideshow{
   position: relative;
+  width: 100%;
+
 }
 .background-slideshow figure{
+  width: 100%;
   position: absolute;
   margin:0;
   z-index: -1000;
 }
 .background-slideshow figure{
   opacity: 0;
+}
+.background-slideshow figure img{
+  width: 100%;
 }
 
 figure:nth-child(1) {
@@ -31,16 +39,16 @@ figure:nth-child(3) {
    animation: xfade 48s 30s infinite;
 }
 figure:nth-child(4) {
-   animation: xfade 48s 24s infinite;
+   animation: xfade 48s 23s infinite;
 }
 figure:nth-child(5) {
-   animation: xfade 48s 18s infinite;
+   animation: xfade 48s 17s infinite;
 }
 figure:nth-child(6) {
-   animation: xfade 48s 12s infinite;
+   animation: xfade 48s 11s infinite;
 }
 figure:nth-child(7) {
-   animation: xfade 48s 6s infinite;
+   animation: xfade 48s 5s infinite;
 }
 figure:nth-child(8) {
    animation: xfade 48s 0s infinite;
@@ -48,10 +56,10 @@ figure:nth-child(8) {
 
 @keyframes xfade{
    0%{
-      opacity: 1;
+      opacity: 0.6;
    }
    10.5% {
-      opacity:1;
+      opacity:0.6;
    }
    12.5%{
       opacity: 0;
@@ -60,7 +68,7 @@ figure:nth-child(8) {
       opacity:0;
    }
    100% {
-      opacity:1;
+      opacity:0.6;
    }
 }
 /*
