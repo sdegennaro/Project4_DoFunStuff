@@ -11,12 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160602140325) do
+ActiveRecord::Schema.define(version: 20160602150740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
+    t.string "date"
+    t.string "time"
+    t.string "title"
+    t.string "description"
+    t.string "location"
+    t.string "url"
+    t.string "image_url"
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "event_id"
+    t.integer  "user_id"
   end
 
   create_table "friendships", force: :cascade do |t|
@@ -29,4 +43,6 @@ ActiveRecord::Schema.define(version: 20160602140325) do
     t.string "password_digest"
   end
 
+  add_foreign_key "favorites", "events", on_delete: :cascade
+  add_foreign_key "favorites", "users", on_delete: :cascade
 end

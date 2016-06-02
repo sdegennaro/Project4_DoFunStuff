@@ -781,3 +781,241 @@ Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-02 10:14:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnstoEvents (20160602143310)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (27.6ms)[0m  [1mALTER TABLE "events" ADD "date" character varying[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "events" ADD "time" character varying
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "events" ADD "title" character varying[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "events" ADD "description" character varying
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "events" ADD "location" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160602143310"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendships'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendships'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUrlColumnstoEvents (20160602143610)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.8ms)[0m  [1mALTER TABLE "events" ADD "url" character varying[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "events" ADD "image_url" character varying
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160602143610"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendships'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (12.6ms)[0m  [1mINSERT INTO "events" ("date", "time", "title", "description", "location", "url", "image_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["date", "June 21, 2016"], ["time", "8:00PM"], ["title", "Dan+Joe+Charles Standup Show at NY Distilling Co."], ["description", "Dan Licata, Joe Pera, and Charles Gould host a very good standup comedy show in the tank room of the NY Distilling Company.  Past performers include Eugene Mirman, Janeane Garofalo, Sasheer Zamata, Chris Gethard, and Roy Wood Jr. but it’s good every week, we promise.  Free too."], ["location", "79 Richardson Street, Brooklyn, NY 11222"], ["url", "https://www.eventbrite.com/e/danjoecharles-standup-show-at-ny-distilling-co-tickets-25302340983"], ["image_url", "https://img.evbuc.com/http%3A%2F%2Fcdn.evbuc.com%2Fimages%2F20930123%2F21281440542%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C689%2C2540%2C1270&s=e59d502981105a5232240a3150e6e560"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("date", "time", "title", "description", "location", "url", "image_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["date", "June 23, 2016"], ["time", "7:00PM"], ["title", "A Midsummer Night's Dream by William Shakespeare"], ["description", "Following in the signature OFFLINE style, the cast features a talented mix of comedians, actors, improvisers and musicians, making for a unique rendition of one of Shakespeare’s most captivating comedies. This production reinvents the Bard’s classic in an interactive, accessible and light way. It will appeal to the most avid Shakespeare fan, as well as to those experiencing a live play for the first time. "], ["location", "80 Saint Marks Place, New York, NY 10003"], ["url", "https://www.eventbrite.com/e/a-midsummer-nights-dream-by-william-shakespeare-tickets-25478167886"], ["image_url", "https://img.evbuc.com/http%3A%2F%2Fcdn.evbuc.com%2Fimages%2F21129459%2F125672144885%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C1395%2C1898%2C949&s=2aab568cfcfce4458dda7993c4e40b01"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("date", "time", "title", "description", "location", "url", "image_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["date", "June 24, 2016"], ["time", "8:00PM"], ["title", "Dueling Pianos at House of 'Que"], ["description", "Join us at House of 'Que in Hoboken for Dueling Pianos ft. The Flying Ivories! Request your favorite song and sing along with your friends as you eat our delicious BBQ & signature cocktails."], ["location", "340 Sinatra Dr - 340 Sinatra Drive, Hoboken, NJ 07030"], ["url", "https://www.eventbrite.com/e/dueling-pianos-at-house-of-que-tickets-25434028865"], ["image_url", "https://img.evbuc.com/http%3A%2F%2Fcdn.evbuc.com%2Fimages%2F21087374%2F176095196693%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C511%2C1500%2C750&s=9dfe7878b5c6f58e35a051a60bf18449"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("date", "time", "title", "description", "location", "url", "image_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["date", "June 29, 2016"], ["time", "7:00PM"], ["title", "John Kelvin & Friends - Reggae & More @ The Patio"], ["description", "John Kelvin plays Reggae and your favorite artist with a reggae flare..from the Beatles to Hendrix..this is no ordinary Reggae show! Come and enjoy the Reggae Rythms of John Kelvin."], ["location", "445 South Main Street, Freeport, NY 11520"], ["url", "https://www.eventbrite.com/e/john-kelvin-friends-reggae-more-the-patio-tickets-24525437243"], ["image_url", "https://img.evbuc.com/http%3A%2F%2Fcdn.evbuc.com%2Fimages%2F20175032%2F17967444829%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C6%2C960%2C480&s=f10d184f89cefa4498faafebd844095c"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("date", "time", "title", "description", "location", "url", "image_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["date", "July 2, 2016"], ["time", "2:00PM"], ["title", "Drawing the Anatomy with Mario Menjivar"], ["description", "Students will learn how to draw some of the major bones and muscles in the human body.   It’s known that a strong anatomy foundation is the beginning of a great artist."], ["location", "1303 Louis Nine Boulevard, Bronx, NY 10459"], ["url", "https://www.eventbrite.com/e/drawing-the-anatomy-with-mario-menjivar-as-part-of-bxarts-factorys-free-art-workshop-series-registration-23205755038"], ["image_url", "https://img.evbuc.com/http%3A%2F%2Fcdn.evbuc.com%2Fimages%2F19671014%2F133601197430%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C61%2C2400%2C1200&s=59cdbfbf85ed470b05116904c80f6398"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("date", "time", "title", "description", "location", "url", "image_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["date", "June 20, 2016"], ["time", "7:00PM"], ["title", "ARGENTINE TANGO CLASSES NYC at Dance Fever Studios"], ["description", "Learn how to dance Authentic Argentine tango at Dance Fever Studios.  No partner needed.  All are welcome.  Meet new people and make new friends as you learn Argentine tango at Dance Fever Studios two NYC dance school locations.  Argentine tango dancing is fun, creative and a great way to get in shape and stay in shape."], ["location", "159 20th Street, Brooklyn, NY 11232"], ["url", "http://www.eventbrite.com/e/argentine-tango-classes-nyc-at-dance-fever-studios-tickets-24924168860"], ["image_url", "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F20581120%2F48938284686%2F1%2Foriginal.jpg?h=300&w=600&rect=0%2C321%2C1628%2C814&s=8b58f806e6a8c0505c6f76d681d955f5"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFavorites (20160602150401)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "favorites" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160602150401"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddForeignKeysforFavorites (20160602150740)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "favorites" ADD CONSTRAINT "fk_rails_f33fa82607"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddForeignKeysforFavorites (20160602150740)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "favorites" ADD CONSTRAINT "fk_rails_f33fa82607"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddForeignKeysforFavorites (20160602150740)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "favorites" ADD "event_id" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "favorites" ADD "user_id" integer
+  [1m[36m (7.1ms)[0m  [1mALTER TABLE "favorites" ADD CONSTRAINT "fk_rails_f33fa82607"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (1.2ms)[0m  ALTER TABLE "favorites" ADD CONSTRAINT "fk_rails_d15744e438"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160602150740"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to AddIdstoTables (20160602150913)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "favorites" ADD "event_id" integer
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (7.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'favorites'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendships'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
