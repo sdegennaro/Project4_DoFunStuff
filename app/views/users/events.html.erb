@@ -1,7 +1,11 @@
+<div ng-controller="EventApiController">
 <nav>
   <a href="/users"> Choose friends</a>
+  <a href="/favorites">My Events</a>
+  <a href="/myfriends">My Friends</a>
+  <%= link_to "Log Out", deletion_station_path, method: :delete %>
 </nav>
-  <div id="all-events-container" ng-controller="EventApiController">
+  <div id="all-events-container">
     <h1>Choose stuff!</h1>
     <div ng-repeat="event in events" class="event-details-container">
       <h3>{{event.title}}</h3>
@@ -22,3 +26,4 @@
 
     </form>
   </div>
+</div>

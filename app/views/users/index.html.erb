@@ -1,7 +1,9 @@
 <nav>
   <a href="/events">Choose stuff</a>
-  <a href="/myfaves">My Events</a>
+  <a href="/favorites">My Events</a>
   <a href="/myfriends">My Friends</a>
+  <%= link_to "Log Out", deletion_station_path, method: :delete %>
+
 
 </nav>
   <div ng-controller="EventApiController">

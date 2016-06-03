@@ -53,7 +53,6 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
     }
     $http.get('/users/find').then(function(response){
       $scope.users = response.data.users;
-      console.log("here's the stuff ", $scope.users);
     })
 
     $scope.getIdsforFriend = function($event){
@@ -86,7 +85,13 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       $http.post('/api/friendships', newFriend).then(function(response){
         console.log(response);
       })
-    }
+    };
+
+    $scope.logOut = function(){
+      $http.delete('/sessions').then(function(){
+        console.log("logged out!");
+      })
+    };
 
     goToRoute = function ( element, path ) {
       element.on("click",function(){
@@ -94,16 +99,23 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       });
     };
 
-    $http.get('/api/favorites/myfaves').then(function(response){
-      $scope.myfaves = response.data;
-      console.log($scope.myfaves);
+    $http.get('/users/faves').then(function(response){
+      $scope.myfaves = response.data.faves;
+      console.log("here's the fave stuff ", $scope.myfaves);
     })
 
 
+    // $http.get('/api/favorites/myfaves').then(function(response){
+    //   $scope.myfaves = response.data;
+    //   console.log($scope.myfaves);
+    // })
 
+
+
+
+    goToRoute($("#sign-up-button"),"/users/new")
 
 }])
 
 $(function(){
-  goToRoute($("#sign-up-button"),"/users/new")
 })

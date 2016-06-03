@@ -17,7 +17,8 @@ Rails.application.routes.draw do
 
   get '/users/log_in' => "users#log_in", as: :log_in
   get '/users/find' => "users#find_friends", as: :find_friends
-  get '/api/favorites/myfaves' => "favorites#my_faves", as: :my_faves
+  get '/users/faves' => "users#find_faves", as: :find_faves
+
   get '/favorites' => "users#favorites", as: :view_faves
   get '/events' => "users#events", as: :events
 
