@@ -94,6 +94,13 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       });
     };
 
+    $http.get('/api/favorites/myfaves').then(function(response){
+      $scope.myfaves = response.data;
+      console.log($scope.myfaves);
+    })
+
+
+
 
 }])
 

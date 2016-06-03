@@ -10,14 +10,15 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :events
-    resources :favorites
+    resources :favorites, only: [:index,:create,:destroy]
     resources :friendships
 
   end
 
   get '/users/log_in' => "users#log_in", as: :log_in
   get '/users/find' => "users#find_friends", as: :find_friends
-
+  get '/api/favorites/myfaves' => "favorites#my_faves", as: :my_faves
+  get '/favorites' => "users#favorites", as: :view_faves
   get '/events' => "users#events", as: :events
 
   post   '/sessions' => "sessions#create", as: :creation_station

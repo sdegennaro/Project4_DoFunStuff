@@ -22,6 +22,9 @@ class UsersController < ApplicationController
   def find_friends
     render json: { users: User.all }
   end
+  
+  def favorites
+  end
 
   def profile
 
