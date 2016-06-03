@@ -1,3 +1,6 @@
+<nav>
+  <a href="/events"> Choose stuff</a>
+</nav>
 <div ng-app="Event-Api">
   <div ng-controller="EventApiController">
 
@@ -5,6 +8,7 @@
     <!-- <p><%=@users%></p> -->
     <div ng-repeat="user in users">
       <p>{{user.username}}</p>
+      <button ng-click="getIdsforFriend($event)">Add Friend</button>
     </div>
   </div>
 </div>

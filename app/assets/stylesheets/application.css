@@ -1,5 +1,11 @@
-.event-container{
+.event-details-container{
   border: 1px solid black;
+}
+.event-details-container img{
+  width: 20%;
+}
+#all-events-container{
+  color: rgb(223, 223, 223);
 }
 button{
   background-color: red;

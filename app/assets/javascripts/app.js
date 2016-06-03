@@ -1,6 +1,6 @@
 var eventApi = angular.module("Event-Api", []);
 
-eventApi.controller("EventApiController",["$scope","$http",function($scope, $http){
+eventApi.controller("EventApiController",["$scope","$http","$location",function($scope, $http, $location){
 
     $http.get('/api/events').then(function(response){
       $scope.events = response.data.events;
@@ -30,21 +30,21 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
     //   $scope.zipcodeInput = "";
     }
 
-    $scope.logIds = function($event){
+    $scope.getIdsforFave = function($event){
       var eventId = parseInt($(this)[0].event.id)
       var userId = ""
       newFave =
-      $http.get('/api/favorites').then(function(response){
-        userId = parseInt(response.data.user.id);
-        var newFave = {
-            favorite: {
-              event_id: eventId,
-              user_id: userId
+        $http.get('/api/favorites').then(function(response){
+          userId = parseInt(response.data.user.id);
+          var newFave = {
+              favorite: {
+                event_id: eventId,
+                user_id: userId
+              }
             }
-          }
-          console.log(newFave);
-        $scope.saveFave(newFave)
-      })
+            console.log(newFave);
+          $scope.saveFave(newFave)
+        })
     }
 
     $scope.saveFave = function(newFave){
@@ -57,6 +57,38 @@ eventApi.controller("EventApiController",["$scope","$http",function($scope, $htt
       console.log("here's the stuff ", $scope.users);
     })
 
+    $scope.getIdsforFriend = function($event){
+      var friendId = parseInt($(this)[0].event.id)
+      var userId = ""
+      newFriend =
+        $http.get('/api/favorites').then(function(response){
+          userId = parseInt(response.data.user.id);
+          var newFriend = {
+              friend: {
+                friend_id: friendId,
+                user_id: userId
+              }
+            }
+            console.log(newFriend);
+          $scope.saveFriend(newFriend)
+        })
+    }
+
+    $scope.saveFriend = function(newFriend){
+      $http.post('/api/favorites', newFriend).then(function(response){
+        console.log(response);
+      })
+    }
+
+    goToRoute = function ( element, path ) {
+      element.on("click",function(){
+        location.href="/users/new"
+      });
+    };
 
 
 }])
+
+$(function(){
+  goToRoute($("#sign-up-button"),"/users/new")
+})

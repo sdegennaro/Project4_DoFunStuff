@@ -1,10 +1,12 @@
-<div ng-app="Event-Api">
-  <div ng-controller="EventApiController">
+<nav>
+  <a href="/users"> Choose friends</a>
+</nav>
+  <div id="all-events-container" ng-controller="EventApiController">
     <h1>Choose stuff!</h1>
-    <div ng-repeat="event in events" class="event-container">
+    <div ng-repeat="event in events" class="event-details-container">
       <h3>{{event.title}}</h3>
       <img src="{{event.image_url}}">
-      <button type="submit" ng-click="logIds($event)">Save</button>
+      <button type="submit" ng-click="getIdsforFave($event)">Save</button>
     </div>
 
     <form id="create-event-form">
@@ -20,4 +22,3 @@
 
     </form>
   </div>
-<div>
