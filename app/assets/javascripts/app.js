@@ -33,18 +33,17 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
     $scope.getIdsforFave = function($event){
       var eventId = parseInt($(this)[0].event.id)
       var userId = ""
-      newFave =
-        $http.get('/api/favorites').then(function(response){
-          userId = parseInt(response.data.user.id);
-          var newFave = {
-              favorite: {
-                event_id: eventId,
-                user_id: userId
-              }
-            }
-            console.log(newFave);
-          $scope.saveFave(newFave)
-        })
+      $http.get('/api/favorites').then(function(response){
+        userId = parseInt(response.data.user.id);
+        var newFave = {
+          favorite: {
+            event_id: eventId,
+            user_id: userId
+          }
+        }
+        console.log(newFave);
+        $scope.saveFave(newFave)
+      })
     }
 
     $scope.saveFave = function(newFave){
@@ -58,24 +57,33 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
     })
 
     $scope.getIdsforFriend = function($event){
-      var friendId = parseInt($(this)[0].event.id)
-      var userId = ""
-      newFriend =
-        $http.get('/api/favorites').then(function(response){
-          userId = parseInt(response.data.user.id);
-          var newFriend = {
-              friend: {
-                friend_id: friendId,
-                user_id: userId
-              }
-            }
-            console.log(newFriend);
-          $scope.saveFriend(newFriend)
-        })
+      console.log($(this));
+      var friendId = parseInt($(this)[0].user.id);
+
+      var userId = "";
+      $http.get('/api/friendships').then(function(response){
+        userId = parseInt(response.data.user.id);
+        var newFriend = {
+          friend: {
+          friend_id: friendId,
+          user_id: userId
+          }
+        }
+        var newFriendReverse = {
+          friend: {
+          friend_id: userId,
+          user_id: friendId
+          }
+        }
+        console.log(newFriend);
+        $scope.saveFriend(newFriend)
+        $scope.saveFriend(newFriendReverse)
+
+      })
     }
 
     $scope.saveFriend = function(newFriend){
-      $http.post('/api/favorites', newFriend).then(function(response){
+      $http.post('/api/friendships', newFriend).then(function(response){
         console.log(response);
       })
     }
