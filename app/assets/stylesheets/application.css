@@ -235,6 +235,13 @@ form input[type="submit"]{
        font-size: 1.2em;
      }
 
+     .auth-form{
+       width: 70%;
+       margin-left: 10%;
+       margin-right: 10%;
+
+     }
+
      .auth-form *{
        margin-left: auto;
        margin-right: auto;
@@ -243,15 +250,26 @@ form input[type="submit"]{
 
      .auth-form input[type="text"]{
        margin-left: 0;
+       font-size: 1em;
+
      }
 
      .auth-form input[type="password"]{
        margin-left: 0;
+       font-size: 1em;
+
      }
 
      .auth-form input[type="submit"]{
        margin-left: 0;
+       font-size: 1.5em;
+
      }
+
+     .sign-and-log-link{
+       font-size: 2em;
+     }
+
 
      .event-details-container{
        width: 70%;
