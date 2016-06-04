@@ -26659,3 +26659,516 @@ Processing by UsersController#find_friends as HTML
   [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
   [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
 Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:41:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 333ms (Views: 332.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9c0083789d81adeb5c8117d46b61057cfc53e14c567d599024d5203592a1853d.css?body=1" for ::1 at 2016-06-04 00:41:46 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:41:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:41:46 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:41:46 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:41:46 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:41:46 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:41:46 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 88ms (Views: 22.1ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:41:46 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:41:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d2a10d355ef0d19c397931d16799a333d4450b942ebfb5eaa8b8c393c13ac50d.css?body=1" for ::1 at 2016-06-04 00:41:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:41:57 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:41:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:41:57 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:41:57 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:41:57 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:41:57 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (3.6ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:41:57 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[35mUser Load (4.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (6.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 16ms (Views: 3.5ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:42:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d2a10d355ef0d19c397931d16799a333d4450b942ebfb5eaa8b8c393c13ac50d.css?body=1" for ::1 at 2016-06-04 00:42:32 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:42:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:42:32 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:42:32 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:42:32 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:42:32 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:42:32 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:42:32 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:43:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ad59437b78939d2dcb489a110d02ab09fa720d30cd01a93ba24008d7dd24e2f1.css?body=1" for ::1 at 2016-06-04 00:43:03 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:43:03 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:43:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:43:03 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:43:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:43:03 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:43:03 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (2.3ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:43:03 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-04 00:43:25 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:45:12 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-04 00:45:15 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:45:20 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:45:50 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-974f1d5edd130536b0663fdf081130ccae7038d616a2f44e137a29ff954607a8.css?body=1" for ::1 at 2016-06-04 00:45:50 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:45:50 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:45:50 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:45:50 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:45:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:45:50 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:46:16 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fa70a81f4d544d634c6aee7c29b2423464c184df1f020be64abe7e04f923d825.css?body=1" for ::1 at 2016-06-04 00:46:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:46:16 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:46:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:46:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:46:16 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:46:16 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:46:49 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9acf329593962e6199bef111a9503afb820841dda0e9f9246bfb62c658cd6061.css?body=1" for ::1 at 2016-06-04 00:46:49 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:46:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:46:49 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:46:49 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:46:49 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:46:49 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:48:05 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a528999a67006d9b261be8eeab013ad49e0c1d48acb1798ae241efd57c60ed3e.css?body=1" for ::1 at 2016-06-04 00:48:05 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:48:05 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:48:05 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:48:05 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:48:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:48:05 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:48:27 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9acf329593962e6199bef111a9503afb820841dda0e9f9246bfb62c658cd6061.css?body=1" for ::1 at 2016-06-04 00:48:27 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:48:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:48:27 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:48:27 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:48:27 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:48:27 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:48:42 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0a8e5c450b40509bd12c4d7af799cfb430281cd326f3e1aeaeeb1286ed7be9fd.css?body=1" for ::1 at 2016-06-04 00:48:42 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:48:42 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:48:42 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:48:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:48:42 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:48:42 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:49:44 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bb7cd2c6c7d24a7a20f9301674449f7df09f74b85cf20f19634063d42cc12942.css?body=1" for ::1 at 2016-06-04 00:49:44 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:49:44 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:49:44 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:49:44 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:49:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:49:44 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:49:53 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c423cec1d6bc84521d83f937838f9eb2ea335bc2dfed7c125f5544ee2c61650b.css?body=1" for ::1 at 2016-06-04 00:49:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:49:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:49:53 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:49:53 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:49:53 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:49:53 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:50:10 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d36dccd66dd23fc1f33ee8dbf43e29e78699123d8425784188ec036b7655e933.css?body=1" for ::1 at 2016-06-04 00:50:11 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:50:11 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:50:11 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:50:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:50:11 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:50:11 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:50:21 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d36dccd66dd23fc1f33ee8dbf43e29e78699123d8425784188ec036b7655e933.css?body=1" for ::1 at 2016-06-04 00:50:21 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:50:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:50:21 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:50:21 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:50:21 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:50:21 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:51:00 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b7685f1625562999d66c1bca50bb6172a8178310888e174a68b6c7acc5638247.css?body=1" for ::1 at 2016-06-04 00:51:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:51:00 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:51:00 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:51:00 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:51:00 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:51:00 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:52:42 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:52:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:52:42 -0400
+
+
+Started GET "/assets/application.self-24d0fd611094355a339c1f9e1e808e25ab8292c42a575a43be605f05569af564.css?body=1" for ::1 at 2016-06-04 00:52:42 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:52:42 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:52:42 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:52:42 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:53:25 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-340911c6bb8a0fa882b063e972e36e0d88e3697c4cab1099a0614129bba16065.css?body=1" for ::1 at 2016-06-04 00:53:25 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:53:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:53:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:53:25 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:53:25 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:53:25 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-04 00:53:46 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d61ffcaad68424bbe2d2db8d966f7caa354c7caa3a513a579dcffbc6077d254d.css?body=1" for ::1 at 2016-06-04 00:53:46 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:53:46 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:53:46 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:53:46 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:53:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:53:46 -0400

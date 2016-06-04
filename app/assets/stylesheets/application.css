@@ -206,8 +206,8 @@ form input[type="submit"]{
      }
 
      .background-slideshow{
-       margin-top: 30%;
-       width: 175%;
+       margin-top: 10%;
+       width: 200%;
      }
 
      #landing-container{
@@ -215,6 +215,24 @@ form input[type="submit"]{
      }
      #landing-container p{
        font-size: 1.2em;
+     }
+
+     .auth-form *{
+       margin-left: auto;
+       margin-right: auto;
+       padding: 3%;
+     }
+
+     .auth-form input[type="text"]{
+       margin-left: 0;
+     }
+
+     .auth-form input[type="password"]{
+       margin-left: 0;
+     }
+
+     .auth-form input[type="submit"]{
+       margin-left: 0;
      }
 
  }
