@@ -6,11 +6,15 @@
   <%= link_to "Log Out", deletion_station_path, method: :delete %>
 </nav>
   <div id="all-events-container">
-    <h1>Choose stuff!</h1>
-    <div ng-repeat="event in events" class="event-details-container">
+    <button id="start-button">Show me fun stuff!</button>
+    <button id="create-button">Add my own fun stuff!</button>
+
+    <div ng-repeat="event in events" class="event-details-container" id="event-id-{{event.id}}">
       <h3>{{event.title}}</h3>
       <img src="{{event.image_url}}">
+      <button type="submit" ng-click="showNextEvent($event)">Next</button>
       <button type="submit" ng-click="getIdsforFave($event)">Save</button>
+
     </div>
 
     <form id="create-event-form">
@@ -27,3 +31,4 @@
     </form>
   </div>
 </div>
+<script src="/javascripts/event.js"></script>

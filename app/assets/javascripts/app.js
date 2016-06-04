@@ -46,6 +46,18 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       })
     }
 
+    $scope.showNextEvent = function($event){
+      var eventId = parseInt($(this)[0].event.id)
+
+      // $(this[0].parent).hide();
+      console.log("hey");
+      console.log(eventIdArray);
+      console.log(eventId);
+      $("#event-id-"+eventId).hide();
+      $("#event-id-"+eventIdArray[Math.floor(Math.random()*eventIdArray.length)]).show()
+
+    }
+
     $scope.saveFave = function(newFave){
       $http.post('/api/favorites', newFave).then(function(response){
         console.log(response);
@@ -107,16 +119,10 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       })
     }
 
-
-
-
-
-
-
-
     goToRoute($("#sign-up-button"),"/users/new")
 
 }])
+
 
 $(function(){
 })
