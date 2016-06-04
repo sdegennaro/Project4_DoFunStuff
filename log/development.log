@@ -24486,3 +24486,883 @@ Started GET "/users/log_in" for ::1 at 2016-06-03 23:47:42 -0400
 Processing by UsersController#log_in as HTML
   Rendered users/log_in.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 60ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:50:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 383ms (Views: 353.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:52:23 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:52:24 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:52:24 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:52:24 -0400
+
+
+Started GET "/assets/application.self-8b62db780d83f3d8f08c82bdd69788cd4e68562e3fda9a17c69ec5a8501c9086.css?body=1" for ::1 at 2016-06-03 23:52:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:52:24 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:52:24 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:52:26 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:52:48 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c63b813c89840354d6afed03dab8a9c99531d81c11f33cba78b6531d85f5938c.css?body=1" for ::1 at 2016-06-03 23:52:48 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:52:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:52:48 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:52:48 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:52:48 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:52:48 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:53:36 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-606fe445ab3b309a4a98339db4ca0200c216e1aa4df0242a137a4107b0648d7e.css?body=1" for ::1 at 2016-06-03 23:53:37 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:53:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:53:37 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:53:37 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:53:37 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:53:37 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:53:47 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-843294b2c846c354a91489fa4690a61f92191407560923053c2e348dc1779a9b.css?body=1" for ::1 at 2016-06-03 23:53:47 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:53:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:53:47 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:53:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:53:47 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:53:47 -0400
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:54:03 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d131b034116f9f2a2cf48019c3cf8fae6fdf137cdf7c59c1944c5e0a423eb91c.css?body=1" for ::1 at 2016-06-03 23:54:04 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:54:04 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:54:04 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:54:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:54:04 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:54:04 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:54:13 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:54:15 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:54:18 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:54:21 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-06-03 23:54:24 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lUVpEZWEvUe/UQDhqe6xQAz7YqOtWkwOrsItWZLa+s94Q+WhZVGYb2EOBa+T86gHhGL6lIsPsH3fR6QMpq0ZWg==", "username"=>"sd", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (6.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "sd"]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 115ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/events" for ::1 at 2016-06-03 23:54:24 -0400
+Processing by UsersController#events as HTML
+  Rendered users/events.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/%7B%7Bevent.image_url%7D%7D" for ::1 at 2016-06-03 23:54:25 -0400
+
+ActionController::RoutingError (No route matches [GET] "/%7B%7Bevent.image_url%7D%7D"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.7ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.9ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (136.8ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/samdegennaro/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (320.6ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:54:25 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:54:25 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 36ms (Views: 22.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-03 23:55:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:55:35 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:55:35 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:55:38 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:55:53 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-03 23:56:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bb79710f54170e74822674888f04a2f9ebe9d619bc9b8a83c4c352cb75937351.css?body=1" for ::1 at 2016-06-03 23:56:23 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:56:24 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:56:24 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:56:26 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-03 23:56:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2e14c4c2d63e185cae6197eeb1cf0550baecd84474174f9931787dfa984d256f.css?body=1" for ::1 at 2016-06-03 23:56:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:56:47 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:56:47 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:56:47 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:56:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:56:47 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:56:47 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:56:47 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-03 23:56:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-687d263aedb7d12f01e5a926d394568e544c55797d554235536c888bb1426a2f.css?body=1" for ::1 at 2016-06-03 23:56:59 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:56:59 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:56:59 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:56:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:56:59 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:56:59 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:57:00 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:57:00 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-03 23:57:05 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1939b12ab72b635a0db3d47b002c5caa1bcd12cba0904f3103dba64a33bef0ff.css?body=1" for ::1 at 2016-06-03 23:57:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:57:05 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:57:05 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:57:05 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:57:05 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:57:05 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:57:05 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:57:05 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-03 23:57:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1939b12ab72b635a0db3d47b002c5caa1bcd12cba0904f3103dba64a33bef0ff.css?body=1" for ::1 at 2016-06-03 23:57:21 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-03 23:57:21 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-03 23:57:21 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-03 23:57:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-03 23:57:21 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-03 23:57:21 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-03 23:57:21 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.9ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-03 23:57:21 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:57:23 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/log_in" for ::1 at 2016-06-03 23:57:24 -0400
+Processing by UsersController#log_in as HTML
+  Rendered users/log_in.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-03 23:57:25 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:00:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 115ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ea2941953f8a856858bb0c7c0105262e055e8efa04e1257cf35a22156cd81774.css?body=1" for ::1 at 2016-06-04 00:00:56 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:00:56 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:00:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:00:56 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:00:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:00:56 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:00:56 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (2.5ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 16ms (Views: 6.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:00:56 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 9ms (Views: 1.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:01:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 120ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:01:14 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:01:14 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:01:14 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:01:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:01:14 -0400
+
+
+Started GET "/assets/application.self-9717ab95475dc475dc60c54b031390cfbf9cac5286b27ff7559a965888ebd9de.css?body=1" for ::1 at 2016-06-04 00:01:14 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:01:14 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:01:14 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:01:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9717ab95475dc475dc60c54b031390cfbf9cac5286b27ff7559a965888ebd9de.css?body=1" for ::1 at 2016-06-04 00:01:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:01:15 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:01:15 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:01:15 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:01:15 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:01:15 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:01:15 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (2.8ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:01:15 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:02:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c0a321a8632905eff7a5ae100c66e10c954b3f6cb292769a6733e319158cec32.css?body=1" for ::1 at 2016-06-04 00:02:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:02:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:02:57 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:02:57 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:02:57 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:02:57 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:02:57 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.9ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:02:57 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:07:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c6fdf2473d8c513deff9951464595323a92bb1e6bcb3b72accaa57c9a371f42.css?body=1" for ::1 at 2016-06-04 00:07:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:07:12 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:07:12 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:07:12 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:07:12 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:07:12 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:07:12 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (1.7ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 16ms (Views: 7.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:07:12 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:07:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7e3c7dfcd00d6e22f419628e2533298d1b591f27e796fd28920e6b9b9248027a.css?body=1" for ::1 at 2016-06-04 00:07:41 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:07:41 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:07:41 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:07:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:07:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:07:41 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:07:42 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:07:42 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:07:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7e3c7dfcd00d6e22f419628e2533298d1b591f27e796fd28920e6b9b9248027a.css?body=1" for ::1 at 2016-06-04 00:07:43 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:07:43 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:07:43 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:07:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:07:43 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:07:43 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:07:43 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:07:43 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:10:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7e3c7dfcd00d6e22f419628e2533298d1b591f27e796fd28920e6b9b9248027a.css?body=1" for ::1 at 2016-06-04 00:10:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:10:02 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:10:02 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:10:02 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:10:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:10:02 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:10:03 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.7ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 21ms (Views: 11.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:10:03 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:10:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4508233f16b230143e5eec8ee510d4ef0000476459dd459ca40f3186d291329d.css?body=1" for ::1 at 2016-06-04 00:10:17 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:10:17 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:10:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:10:17 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:10:17 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:10:17 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:10:17 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (1.9ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:10:17 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:14:31 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 82ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1a51dbffb8b05f072b015b85a95dd40b0dbfb69409fa5a619eb39cb37b5c3973.css?body=1" for ::1 at 2016-06-04 00:14:31 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:14:31 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:14:31 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:14:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:14:31 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:14:31 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:14:31 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (1.8ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:14:31 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-04 00:15:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a5c11df716e8674dcd70644b743425322ce65588bcc2795c39523a88fa1c3578.css?body=1" for ::1 at 2016-06-04 00:15:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-06-04 00:15:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-04 00:15:28 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-04 00:15:28 -0400
+
+
+Started GET "/assets/app.self-2adc323cf3e6b7e75086619317f037f3706b36ab0df1fec90f3f4305ac455a97.js?body=1" for ::1 at 2016-06-04 00:15:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-04 00:15:28 -0400
+
+
+Started GET "/api/events" for ::1 at 2016-06-04 00:15:28 -0400
+Processing by Api::EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/find" for ::1 at 2016-06-04 00:15:28 -0400
+Processing by UsersController#find_friends as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
