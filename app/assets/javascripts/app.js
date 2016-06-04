@@ -99,16 +99,17 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       });
     };
 
-    $http.get('/users/faves').then(function(response){
-      $scope.myfaves = response.data.faves;
-      console.log("here's the fave stuff ", $scope.myfaves);
-    })
+    $scope.getFaves = function(){
+      console.log('yo');
+      $http.get('/users/faves').then(function(response){
+        $scope.myfaves = response.data.faves;
+        console.log("here's the fave stuff ", $scope.myfaves);
+      })
+    }
 
 
-    // $http.get('/api/favorites/myfaves').then(function(response){
-    //   $scope.myfaves = response.data;
-    //   console.log($scope.myfaves);
-    // })
+
+
 
 
 

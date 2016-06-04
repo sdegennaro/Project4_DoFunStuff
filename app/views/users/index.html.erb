@@ -1,13 +1,13 @@
+<div ng-controller="EventApiController">
 <nav>
   <a href="/events">Choose stuff</a>
-  <a href="/favorites">My Events</a>
+  <a ng-click="getFaves()" href="/favorites">My Events</a>
   <a href="/myfriends">My Friends</a>
   <%= link_to "Log Out", deletion_station_path, method: :delete %>
 
 
 </nav>
-  <div ng-controller="EventApiController">
-
+  <div>
     <h1>All the users</h1>
     <!-- <p><%=@users%></p> -->
     <div ng-repeat="user in users">
@@ -15,3 +15,4 @@
       <button ng-click="getIdsforFriend($event)">Add Friend</button>
     </div>
   </div>
+</div>
