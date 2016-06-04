@@ -262,12 +262,13 @@ form input[type="submit"]{
 
      .auth-form input[type="submit"]{
        margin-left: 0;
-       font-size: 1.5em;
+       font-size: 1em;
+       width: 175px;
 
      }
 
      .sign-and-log-link{
-       font-size: 2em;
+       font-size: 1.2em;
      }
 
 
