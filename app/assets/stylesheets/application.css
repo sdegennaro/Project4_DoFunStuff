@@ -4,11 +4,16 @@ html, body {
 
 .event-details-container{
   border: 1px solid black;
+  background-color: rgb(98, 98, 98);
 }
 
 .event-details-container img{
   width: 80%;
   margin: 0 10%;
+}
+.event-details-container h3{
+  width: 90%;
+  text-align: center;
 }
 
 .event-details-container button{
