@@ -26,6 +26,7 @@ button{
   background-color: red;
   height: 50px;
   width: 100px;
+  border-radius: 5%;
 }
 
 body{
@@ -112,24 +113,66 @@ figure:nth-child(8) {
    }
 }
 
-#log-in-container{
+.auth-form{
   position: absolute;
-  margin: 0;
-  width: 100%;
+  margin: 10% 25%;
+  width: 40%;
+  padding: 2% 5%;
   background-color: rgb(98, 98, 98);
-  padding: 5%;
   color: rgb(223, 223, 223);
-
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px black;
 }
 
-#sign-up-container{
-  position: absolute;
-  margin: 0;
-  width: 100%;
-  background-color: rgb(138, 138, 138);
-  padding: 5%;
+.sign-and-log-link{
+  width: 20%;
+  padding: 1% 5%;
+  display: inline;
+  background-color: rgb(61, 61, 61);
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+.links-container{
+  margin-left: 25%;
+}
+
+.links-container .unselected:hover{
+  transition: background-color 0.5s ease;
+  background-color: rgb(124, 64, 64);
+}
+
+.links-container .unselected a:hover{
+  transition: color 0.5s ease;
   color: rgb(223, 223, 223);
 }
+
+.links-container .selected{
+  background-color: rgb(124, 64, 64);
+}
+.links-container .selected:hover{
+  background-color: rgb(111, 56, 56);
+}
+
+form input{
+  margin: 2% 0;
+  padding: 2% 0 2% 2%;
+}
+
+form input[type="text"]{
+  margin-left: 27%;
+}
+
+form input[type="password"]{
+  margin-left: 27%;
+}
+
+form input[type="submit"]{
+  margin-left: 32%;
+  width: 100px;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

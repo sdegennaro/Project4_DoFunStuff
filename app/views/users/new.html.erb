@@ -1,24 +1,19 @@
-<h1>Create a new user!</h1>
-<div id="sign-up-container">
-<!-- username email password -->
+<div id="sign-up-container" class="auth-form">
+  <div class="links-container">
+    <div class="sign-and-log-link selected">Sign Up</div>
+    <div class="sign-and-log-link unselected"><%= link_to "Log In", log_in_path %></div>
+  </div>
   <%= form_for @user do |f| %>
-    <%= f.label :username %>
     <br>
-    <%= f.text_field :username %>
+    <%= text_field_tag :username, nil, placeholder: "Username" %>
     <br>
     <!-- note that this is a password field, dont mess this up! -->
-    <%= f.label :password %>
+    <%= password_field_tag :password, nil, placeholder: "Password" %>
     <br>
-    <%= f.password_field :password %>
+    <%= password_field_tag :password_confirmation, nil, placeholder: "Confirm Password" %>
     <br>
-
-    <%= f.label :password_confirmation %>
-    <br>
-    <%= f.password_field :password_confirmation %>
-    <br>
-    <%= f.submit %>
+    <%= submit_tag %>
   <% end %>
 
-  <h6><%= link_to "Already Have an account? Log In", log_in_path %></h6>
 
 </div>
