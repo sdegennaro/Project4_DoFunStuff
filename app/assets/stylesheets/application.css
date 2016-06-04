@@ -7,11 +7,18 @@ html, body {
 }
 
 .event-details-container img{
-  width: 20%;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.event-details-container button{
+  display: block;
+  margin: 0 auto;
 }
 
 #all-events-container{
   color: rgb(223, 223, 223);
+  margin-left: 5%;
 }
 
 a{
@@ -170,6 +177,7 @@ form input[type="submit"]{
   width: 100px;
 }
 
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -198,7 +206,12 @@ form input[type="submit"]{
        padding: 20%;
      }
 
+     .event-details-container{
+       width: 30%;
+       display: inline-block;
+     }
  }
+
 
  @media screen and (min-width : 300px) and (max-width : 780px) {
      body {
@@ -233,6 +246,16 @@ form input[type="submit"]{
 
      .auth-form input[type="submit"]{
        margin-left: 0;
+     }
+
+     .event-details-container{
+       width: 70%;
+       display: block;
+       padding: 10%;
+     }
+
+     #all-events-container{
+       margin-left: 10%;
      }
 
  }
