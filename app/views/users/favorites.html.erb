@@ -5,23 +5,30 @@
   <%= link_to "Log Out", deletion_station_path, method: :delete %>
 </nav>
 <div ng-controller="EventApiController" id="my-events-container">
-
+<!--  TODO: would like to show only uniques, better yet only save uniques-->
   <h1>Your favorite events</h1>
     <%@myFaves.each do |myfave|%>
       <div class="fave-details-container">
         <h3><%= myfave.event.title%></h3>
         <img src="<%= myfave.event.image_url%>">
         <div class="friend-container">
-
+<!--  TODO: would want to limit this to only display a certain number and then stop, with a lot of users this would be too big-->
+          <%friendArray = []%>
           <%@myFriends.each do |friend|%>
             <% friend.friend.favorites.each do |fave|%>
               <% if myfave.event.id == fave.event.id%>
-                <p><%=fave.event.title%></p>
-                <p><%=friend.friend.username%></p>
-                <p><%=fave.event.id%></p>
+                <%friendArray.push(friend.friend)%>
               <%end%>
             <%end%>
           <%end%>
+          <%friendArray = friendArray.uniq%>
+          <p>These friends are also interested: <%friendArray.each_with_index do |friend, index|%>
+            <%if index == friendArray.size - 1%>
+              <%=friend.username%>
+            <%else%>
+              <%=friend.username%>,
+            <%end%>
+          <%end%></p>
         </div>
       </div>
 
