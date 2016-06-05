@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get '/users/faves' => "users#find_faves", as: :find_faves
 
   get '/favorites' => "users#favorites", as: :view_faves
+  get '/friends' => "users#friends", as: :view_friends
+
   get '/events' => "users#events", as: :events
 
   post   '/sessions' => "sessions#create", as: :creation_station

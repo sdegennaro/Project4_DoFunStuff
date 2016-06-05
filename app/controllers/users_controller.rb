@@ -34,6 +34,10 @@ class UsersController < ApplicationController
 
   end
 
+  def friends
+    @myFriends = Friendship.where user_id: current_user.id
+  end
+  
   def profile
 
     # debugger

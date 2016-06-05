@@ -1,17 +1,17 @@
 <nav>
   <a href="/users"> Choose friends</a>
   <a href="/events">Browse Events</a>
-  <a href="/friends">My Friends</a>
+  <a href="/favorites">My Events</a>
   <%= link_to "Log Out", deletion_station_path, method: :delete %>
 </nav>
 <div ng-controller="EventApiController" id="my-events-container">
 
-  <h1>Your favorite events</h1>
-    <%@myFaves.each do |fave|%>
+  <h1>Your friends</h1>
+    <%@myFriends.each do |friend|%>
       <!-- <div class="event-details-container"> -->
-      <div class="fave-details-container">
-        <h3><%= fave.event.title%></h3>
-        <img src="<%= fave.event.image_url%>">
+      <div class="friend-details-container">
+        <h3><%= friend.friend%></h3>
+        <p><%= friend.friend.username%></p>
     <!-- </div> -->
       </div>
     <% end %>
