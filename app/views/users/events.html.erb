@@ -8,14 +8,13 @@
   <div id="all-events-container">
     <button id="start-button">Show me fun stuff!</button>
     <button id="create-button">Add my own fun stuff!</button>
-
-    <div ng-repeat="event in events" class="event-details-container" id="event-id-{{event.id}}">
-      <h3>{{event.title}}</h3>
-      <img src="{{event.image_url}}">
-      <button type="submit" ng-click="showNextEvent($event)">Next</button>
-      <button type="submit" ng-click="getIdsforFave($event)">Save</button>
-
-    </div>
+      <div ng-repeat="event in events" class="event-details-container" id="event-id-{{event.id}}">
+        <h3>{{event.title}}</h3>
+        <img src="{{event.image_url}}">
+        <button type="submit" ng-click="showNextEvent($event)">Next</button>
+        <button type="submit" ng-click="getIdsforFave($event)">Save</button>
+      </div>
+    
 
     <form id="create-event-form">
       <input type = "text" ng-model="dateInput" name ="event[date]" placeholder="Date">

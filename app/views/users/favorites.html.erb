@@ -7,8 +7,9 @@
 <div ng-controller="EventApiController" id="my-events-container">
 <!--  TODO: would like to show only uniques, better yet only save uniques-->
   <h1>Your favorite events</h1>
+  <div class="row">
     <%@myFaves.each do |myfave|%>
-      <div class="fave-details-container">
+      <div class="fave-details-container col">
         <h3><%= myfave.event.title%></h3>
         <img src="<%= myfave.event.image_url%>">
         <div class="friend-container">
@@ -27,7 +28,7 @@
               <%if index == friendArray.size - 1%>
                 <a href="mailto:<%=friend.email%>?subject=Yo%20Zaposphere%20I%20love%20your%20work&body=hello"><%=friend.username%></a>
               <%else%>
-                <a href="mailto:<%=friend.email%>?subject=Yo%20Zaposphere%20I%20love%20your%20work&body=hello"><%=friend.username%></a>,
+                <a href="mailto:<%=friend.email%>?subject=Join%20me%20for%20<%=myfave.event.title%>&#63&body=Hey!%0D%0AI%20saw%20on"><%=friend.username%></a>,
               <%end%>
             <%end%></p>
           <%end%>
@@ -35,5 +36,5 @@
       </div>
 
       <%end%>
-
+    </div>
 </div>
