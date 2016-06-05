@@ -22,13 +22,15 @@
             <%end%>
           <%end%>
           <%friendArray = friendArray.uniq%>
-          <p>These friends are also interested: <%friendArray.each_with_index do |friend, index|%>
-            <%if index == friendArray.size - 1%>
-              <%=friend.username%>
-            <%else%>
-              <%=friend.username%>,
-            <%end%>
-          <%end%></p>
+          <% if friendArray.size > 0 %>
+            <p>These friends are also interested: <%friendArray.each_with_index do |friend, index|%>
+              <%if index == friendArray.size - 1%>
+                <a href="mailto:<%=friend.email%>?subject=Yo%20Zaposphere%20I%20love%20your%20work&body=hello"><%=friend.username%></a>
+              <%else%>
+                <a href="mailto:<%=friend.email%>?subject=Yo%20Zaposphere%20I%20love%20your%20work&body=hello"><%=friend.username%></a>,
+              <%end%>
+            <%end%></p>
+          <%end%>
         </div>
       </div>
 

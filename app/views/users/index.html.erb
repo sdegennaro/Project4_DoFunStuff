@@ -7,9 +7,9 @@
 
 
 </nav>
-  <div>
-    <h1>All the users</h1>
-    <!-- <p><%=@users%></p> -->
+  <div id="users-container">
+    <h1>Add Friends</h1>
+<!--  TODO: only show uniques, or only save unique users to DB-->
     <div ng-repeat="user in users">
       <p>{{user.username}}</p>
       <button ng-click="getIdsforFriend($event)">Add Friend</button>

@@ -6,9 +6,11 @@ nav{
   margin: 2%;
 }
 
-#my-events-container{
+#my-events-container, #users-container{
   color: rgb(223, 223, 223);
 }
+
+
 
 .event-details-container{
   border: 1px solid black;
