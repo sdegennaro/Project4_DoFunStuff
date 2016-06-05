@@ -17,7 +17,8 @@ class Api::FavoritesController < ApplicationController
 
 
   def destroy
-
+    Favorite.destroy params[:id]
+    redirect_to view_faves_path
   end
 
   private
