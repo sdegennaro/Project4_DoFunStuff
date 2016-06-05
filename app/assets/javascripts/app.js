@@ -119,6 +119,8 @@ eventApi.controller("EventApiController",["$scope","$http","$location",function(
       })
     }
 
+    $scope.getFaves();
+
     goToRoute($("#sign-up-button"),"/users/new")
 
 }])

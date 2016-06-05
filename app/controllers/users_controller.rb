@@ -24,12 +24,14 @@ class UsersController < ApplicationController
   end
 
   def find_faves
-    myFaves = Favorite.find_by user_id: current_user.id
+    myFaves = Favorite.where user_id: current_user.id
     render json: { faves: myFaves }
     # render json: { faves: Favorite.all }
   end
 
   def favorites
+    @myFaves = Favorite.where user_id: current_user.id
+
   end
 
   def profile
