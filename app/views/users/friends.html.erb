@@ -8,11 +8,15 @@
 
   <h1>Your friends</h1>
     <%@myFriends.each do |friend|%>
-      <!-- <div class="event-details-container"> -->
       <div class="friend-details-container">
-        <h3><%= friend.friend%></h3>
-        <p><%= friend.friend.username%></p>
-    <!-- </div> -->
+        <ul>
+        <li><%= friend.friend.username%></li>
+        <% friend.friend.favorites.each do |fave|%>
+        <p><%=fave%></p>
+        <p><%=fave.event.url%></p>
+        <%end%>
+
+      </ul>
       </div>
     <% end %>
 </div>

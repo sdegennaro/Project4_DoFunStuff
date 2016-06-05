@@ -8,11 +8,12 @@
 
   <h1>Your favorite events</h1>
     <%@myFaves.each do |fave|%>
-      <!-- <div class="event-details-container"> -->
       <div class="fave-details-container">
         <h3><%= fave.event.title%></h3>
         <img src="<%= fave.event.image_url%>">
-    <!-- </div> -->
+        <div class="friend-container">
+
+        </div>
       </div>
     <% end %>
 </div>

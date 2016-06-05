@@ -31,13 +31,14 @@ class UsersController < ApplicationController
 
   def favorites
     @myFaves = Favorite.where user_id: current_user.id
+    @myFriends = Friendship.where user_id: current_user.id
 
   end
 
   def friends
     @myFriends = Friendship.where user_id: current_user.id
   end
-  
+
   def profile
 
     # debugger
