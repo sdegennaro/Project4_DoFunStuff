@@ -4,14 +4,13 @@
   </div>
   <%= form_for @user do |f| %>
     <br>
-    <%= text_field_tag :username, nil, placeholder: "Username" %>
-    <br>
+    <%= f.text_field :username, placeholder: "Username" %>
     <!-- note that this is a password field, dont mess this up! -->
-    <%= password_field_tag :password, nil, placeholder: "Password" %>
+    <%= f.password_field :password, placeholder: "Password" %>
     <br>
-    <%= password_field_tag :password_confirmation, nil, placeholder: "Confirm Password" %>
+    <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
     <br>
-    <%= submit_tag %>
+    <%= f.submit %>
   <% end %>
 
 
