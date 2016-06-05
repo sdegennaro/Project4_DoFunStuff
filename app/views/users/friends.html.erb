@@ -12,8 +12,8 @@
         <ul>
         <li><%= friend.friend.username%></li>
         <% friend.friend.favorites.each do |fave|%>
-        <p><%=fave%></p>
-        <p><%=fave.event.url%></p>
+        <p><%=fave.event.title%></p>
+        <a href="<%=fave.event.url%>"><img src="<%=fave.event.image_url%>"></a>
         <%end%>
 
       </ul>

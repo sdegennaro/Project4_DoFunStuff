@@ -7,13 +7,24 @@
 <div ng-controller="EventApiController" id="my-events-container">
 
   <h1>Your favorite events</h1>
-    <%@myFaves.each do |fave|%>
+    <%@myFaves.each do |myfave|%>
       <div class="fave-details-container">
-        <h3><%= fave.event.title%></h3>
-        <img src="<%= fave.event.image_url%>">
+        <h3><%= myfave.event.title%></h3>
+        <img src="<%= myfave.event.image_url%>">
         <div class="friend-container">
 
+          <%@myFriends.each do |friend|%>
+            <% friend.friend.favorites.each do |fave|%>
+              <% if myfave.event.id == fave.event.id%>
+                <p><%=fave.event.title%></p>
+                <p><%=friend.friend.username%></p>
+                <p><%=fave.event.id%></p>
+              <%end%>
+            <%end%>
+          <%end%>
         </div>
       </div>
-    <% end %>
+
+      <%end%>
+
 </div>
