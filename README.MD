@@ -29,28 +29,8 @@ The user must be able to email a friend who has favorited one of their saved eve
 ![alt tag](http://i.imgur.com/2yi6Gdw.png)
 ![alt tag](http://i.imgur.com/2WuTFjJ.png)
 
-Things you may want to cover:
+### APPROACH
+For this MVP, I seeded the database with events and focused on developing the necessary dependencies and views.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-For self referential used:
-http://railscasts.com/episodes/163-self-referential-association
+### FUTURE FEATURES
+In the future, I would like to populate events through an API like Eventbrite or Eventful. I would also like to source friends using Facebook Oauth. Further styling and ux design would be needed in future versions.
