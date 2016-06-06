@@ -1,47 +1,50 @@
-<nav>
-  <a href="/users"> Choose friends</a>
-  <a href="/events">Browse Events</a>
-  <a href="/friends">My Friends</a>
-  <%= link_to "Log Out", deletion_station_path, method: :delete %>
-</nav>
-<div ng-controller="EventApiController" id="my-events-container">
-<!--  TODO: would like to show only uniques, better yet only save uniques-->
-  <h1>Your favorite events</h1>
-  <div class="row">
-    <%@myFaves.each_with_index do |myfave, index|%>
-      <%if @myFaves.size > 5 %>
-        <%if (index)%(@myFaves.size/2.0).ceil == 0%>
-        </div>
-        <div class="row">
-        <%end%>
-      <% end %>
-      <div class="fave-details-container col">
-        <h3><%= myfave.event.title%></h3>
-        <a href="<%=myfave.event.url%>"><img src="<%= myfave.event.image_url%>"></a>
-        <div class="friend-container">
-<!--  TODO: would want to limit this to only display a certain number and then stop, with a lot of users this would be too big-->
-          <%friendArray = []%>
-          <%@myFriends.each do |friend|%>
-            <% friend.friend.favorites.each do |fave|%>
-              <% if myfave.event.id == fave.event.id%>
-                <%friendArray.push(friend.friend)%>
+<div class="main-container">
+
+  <nav>
+    <a href="/users"> Choose friends</a>
+    <a href="/events">Browse Events</a>
+    <a href="/friends">My Friends</a>
+    <%= link_to "Log Out", deletion_station_path, method: :delete %>
+  </nav>
+  <div ng-controller="EventApiController" id="my-events-container">
+  <!--  TODO: would like to show only uniques, better yet only save uniques-->
+    <h1>Your favorite events</h1>
+    <div class="row">
+      <%@myFaves.each_with_index do |myfave, index|%>
+        <%if @myFaves.size > 5 %>
+          <%if (index)%(@myFaves.size/2.0).ceil == 0%>
+          </div>
+          <div class="row">
+          <%end%>
+        <% end %>
+        <div class="fave-details-container col">
+          <h3><%= myfave.event.title%></h3>
+          <a href="<%=myfave.event.url%>"><img src="<%= myfave.event.image_url%>"></a>
+          <div class="friend-container">
+  <!--  TODO: would want to limit this to only display a certain number and then stop, with a lot of users this would be too big-->
+            <%friendArray = []%>
+            <%@myFriends.each do |friend|%>
+              <% friend.friend.favorites.each do |fave|%>
+                <% if myfave.event.id == fave.event.id%>
+                  <%friendArray.push(friend.friend)%>
+                <%end%>
               <%end%>
             <%end%>
-          <%end%>
-          <%friendArray = friendArray.uniq%>
-          <% if friendArray.size > 0 %>
-            <p>These friends are also interested: <%friendArray.each_with_index do |friend, index|%>
-              <%if index == friendArray.size - 1%>
-                <a href="mailto:<%=friend.email%>?subject=Join%20me%20for%20<%=myfave.event.title%>&#63"><%=friend.username%></a>
-              <%else%>
-                <a href="mailto:<%=friend.email%>?subject=Join%20me%20for%20<%=myfave.event.title%>&#63"><%=friend.username%></a>,
-              <%end%>
-            <%end%></p>
-          <%end%>
+            <%friendArray = friendArray.uniq%>
+            <% if friendArray.size > 0 %>
+              <p>These friends are also interested: <%friendArray.each_with_index do |friend, index|%>
+                <%if index == friendArray.size - 1%>
+                  <a href="mailto:<%=friend.email%>?subject=Join%20me%20for%20<%=myfave.event.title%>&#63"><%=friend.username%></a>
+                <%else%>
+                  <a href="mailto:<%=friend.email%>?subject=Join%20me%20for%20<%=myfave.event.title%>&#63"><%=friend.username%></a>,
+                <%end%>
+              <%end%></p>
+            <%end%>
 
+          </div>
+          <%= button_to "Delete", api_favorite_path(myfave.id), method: :delete %>
         </div>
-        <%= button_to "Delete", api_favorite_path(myfave.id), method: :delete %>
+        <%end%>
       </div>
-      <%end%>
-    </div>
+  </div>
 </div>
