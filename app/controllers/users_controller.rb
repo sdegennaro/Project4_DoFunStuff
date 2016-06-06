@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   include SessionsHelper
-  before_action :authenticate!, only: [:find_faves, :find_friends, :favorites, :profile]
+  # before_action :authenticate!, only: [:find_faves, :find_friends, :favorites, :profile]
 
   def create
     user = User.create user_params
