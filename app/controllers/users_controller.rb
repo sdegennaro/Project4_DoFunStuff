@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   include SessionsHelper
 
-  before_action :authenticate_user!, :except => [:create, :new, :log_in]
+  before_action :authenticate!, :except => [:create, :new, :log_in]
   # before_action :authenticate!, only: [:find_faves, :find_friends, :favorites, :profile]
 
   def create
@@ -41,7 +41,7 @@ class UsersController < ApplicationController
     @myFriends = Friendship.where user_id: current_user.id
   end
 
-  
+
 
 
 
